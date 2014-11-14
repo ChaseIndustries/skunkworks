@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=9" />
+        <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="css/vendor/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/vendor/jquery.jscrollpane.css" media="all">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/component.css">
+        <link rel="stylesheet" href="css/theme.css">
+        <!--[if IE]>
+          <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+        <!--
+        hotfix.css is CSS only (not built with a compiler) 
+        for back-end devs to make quick hotfixes to existing styles (or to add new ones)
+        -->
+        <link rel="stylesheet" href="css/hotfix.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/html5shiv.min.js"></script>
+    </head>
+<body>
+  <div class="container content">
+	<p>This Example just print's the raw accelerometer and gyro data. Will return null if no device information is found.</p>
+	<p>gyro.getFeatures: <span id="features"></span></p>
+	<span id="example"></span>
+	<script src="js/vendor/gyro.js"></script>
+	<script>
+		gyro.startTracking(function(o) {
+			var b = document.getElementById('example'),
+					f = document.getElementById('features');
+			f.innerHTML = gyro.getFeatures();
+			b.innerHTML = "<p> x = " + Math.floor(o.x) + "</p>" +
+										"<p> y = " + Math.floor(o.y) + "</p>" +
+										"<p> z = " + Math.floor(o.z) + "</p>" +
+										"<p> alpha = " + Math.floor(o.alpha) + "</p>" +
+										"<p> beta = " + Math.floor(o.beta) + "</p>" +
+										"<p> gamma = " + Math.floor(o.gamma) + "</p>";
+		});
+	</script>
+  </div>
+</body>
+</html>
