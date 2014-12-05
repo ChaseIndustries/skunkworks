@@ -1,0 +1,24 @@
+@import "compass";
+@import "compass/css3";
+
+// Font size
+$font-base: percentage(10 / 16);  // 1rem = 10px
+
+// Font stacks
+$serif: "Times",serif;
+$sans-serif: "Helvetica",sans-serif;
+
+// Colors
+$color-1:black;
+$color-2:red;
+
+//Bootstrap Breakpoints
+$break-xs: 768px;
+$break-sm: 992px;
+$break-md: 1200px;
+
+// Other Arbitrary Values
+$spacing: 15px;
+$radius: 5px;
+$footer-height:180px;
+$header-height:180px;

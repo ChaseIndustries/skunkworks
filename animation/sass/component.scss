@@ -1,0 +1,24 @@
+/**
+ * @file component.scss
+ *   The reusable, modular parts of the design. They are the callouts, the
+ *   sidebar sections, the product lists and so on.
+ */
+
+@import "vars";
+
+.character {
+  position:absolute;
+  width:100px;
+  height:100px;
+  left:50%;
+  top:50%;
+  &.mexican {
+    background:red;
+  }
+  &.chinese {
+    background:yellow;
+  }
+  &.wings {
+    background:blue;
+  }
+}

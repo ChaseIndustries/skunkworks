@@ -1,0 +1,23 @@
+/**
+ * @file layout.scss
+ *   Divides the page into sections. Layouts hold one or more modules together.
+ */
+/* line 8, ../sass/layout.scss */
+html, body {
+  height: 100%; }
+
+/* line 12, ../sass/layout.scss */
+.wrapper {
+  min-height: 100%; }
+
+/* line 16, ../sass/layout.scss */
+.wrapper--inner {
+  overflow: auto;
+  padding-bottom: 180px; }
+
+/* line 21, ../sass/layout.scss */
+footer {
+  position: relative;
+  margin-top: -180px;
+  height: 180px;
+  clear: both; }

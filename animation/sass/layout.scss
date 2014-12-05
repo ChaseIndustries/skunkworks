@@ -1,0 +1,26 @@
+/**
+ * @file layout.scss
+ *   Divides the page into sections. Layouts hold one or more modules together.
+ */
+
+@import "vars";
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.wrapper--inner {
+  overflow:auto;
+	padding-bottom: $footer-height; // must be same height as the footer
+} 
+
+footer {
+  position: relative;
+	margin-top: -1 * $footer-height; // negative value of footer height
+	height: $footer-height;
+	clear:both;
+}

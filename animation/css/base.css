@@ -1,0 +1,62 @@
+/**
+ * @file base.scss
+ *   Defaults. They are almost exclusively single element selectors but it
+ *   could include attribute selectors, pseudo-class selectors, helper classes,
+ *   child selectors or sibling selectors. Essentially, a base style says that
+ *   wherever this element is on the page, it should look like this.
+ */
+/* line 13, ../sass/base.scss */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  text-shadow: none;
+  outline: 0; }
+
+/* line 22, ../sass/base.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 25, ../sass/base.scss */
+body {
+  font-family: "Times", serif;
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: 'adobe_garamondregular'; }
+
+/* line 32, ../sass/base.scss */
+h1 {
+  font-size: 3.6rem; }
+
+/* line 35, ../sass/base.scss */
+h2 {
+  font-size: 3.2rem;
+  font-family: "Garamond",serif;
+  font-style: italic;
+  font-weight: normal;
+  margin-top: 10px; }
+
+/* line 42, ../sass/base.scss */
+h3 {
+  font-size: 3rem; }
+
+/* line 45, ../sass/base.scss */
+h4 {
+  font-size: 2.4rem; }
+
+/* line 48, ../sass/base.scss */
+h5 {
+  font-size: 2rem; }
+
+/* line 51, ../sass/base.scss */
+h6 {
+  font-size: 1.8rem; }
+
+/* line 55, ../sass/base.scss */
+a {
+  color: black; }
+  /* line 57, ../sass/base.scss */
+  a:hover {
+    color: black;
+    text-decoration: underline; }

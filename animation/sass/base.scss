@@ -1,0 +1,61 @@
+/**
+ * @file base.scss
+ *   Defaults. They are almost exclusively single element selectors but it
+ *   could include attribute selectors, pseudo-class selectors, helper classes,
+ *   child selectors or sibling selectors. Essentially, a base style says that
+ *   wherever this element is on the page, it should look like this.
+ */
+
+@import "vars";
+@import "mixins";
+
+//base styles
+* {
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	@include text-shadow(none);
+	outline:0; //to prevent highlighting on links
+}
+
+html {
+  font-size: $font-base;
+}
+body {
+  font-family: $serif;
+  font-size: 1.4em;
+  font-weight: 300;
+	font-family:'adobe_garamondregular';
+}
+
+h1 {
+  font-size: 3.6rem;
+}
+h2 {
+  font-size: 3.2rem;
+  font-family:"Garamond",serif;
+  font-style:italic;
+  font-weight:normal;
+  margin-top:10px;
+}
+h3 {
+  font-size:3rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.8rem;
+}
+
+a {
+  color: $color-1;
+  &:hover {
+    color: $color-1;
+    text-decoration: underline;
+  }
+}
